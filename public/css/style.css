@@ -1,0 +1,50 @@
+header, .project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1b89bc;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+button:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+.dollar-amount {
+  color: #056605;
+  font-weight: bold;
+  margin-left: -5px;
+}
+
+.container-center {
+  display:flexbox ;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set a minimum height for centering vertically */
+}
+
+/* Solid border */
+.solid {
+  border-top: 0.5px solid rgb(195 192 192);
+}
+
+.solidu {
+  border-bottom: 0.5px solid rgb(195 192 192);
+}
+
+.update,
+.delete,
+.new,
+.submit{
+  background-color: #0a364b;
+  color: #c9dfea;
+  padding: 10px;
+  text-decoration: none;
+}

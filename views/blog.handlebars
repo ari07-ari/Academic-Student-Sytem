@@ -1,0 +1,44 @@
+<!-- Loop over each object in the blogs array -->
+<div class="text-center">
+  <div class="col mb-4 project">
+
+    <div class="col-m-5">
+      <div>
+        <h2>
+          {{title}}
+        </h2>
+
+        <h5>
+          Posted by {{user.username}} on {{date_created}}
+        </h5>
+      </div>
+
+      <p>
+        {{content}}
+      </p>
+
+      <form >
+        <h5 class="solid">Add a Comment:</h5>
+        <textarea class="comment" id="comment"></textarea>
+        <p></p>
+        <button class="submit">Submit comment</button>
+        <input type="hidden" id="userId" name="userId" value="{{user_id}}"/>
+        <input type="hidden" id="blogId" name="blogId" value="{{id}}"/>
+      </form>
+
+
+      <h3>Comments</h3>
+      {{#each comments as |comment|}}
+
+      <p>
+        {{comment.comment_text}} <br>
+      </p>
+      <h5 class="solidu">Made by: {{user.username}},{{date_created}}</h5>
+
+      {{/each}}
+    </div>
+
+  </div>
+</div>
+
+<script src="/js/comment.js"></script>
