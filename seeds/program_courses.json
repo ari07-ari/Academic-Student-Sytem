@@ -1,0 +1,10 @@
+[
+    {
+      "courses_id": [2,3,5],
+      "program_id":1
+    },
+    {
+      "courses_id": [1,4,6],
+      "program_id":2
+    }
+  ]

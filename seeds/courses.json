@@ -1,0 +1,32 @@
+[
+  {
+    "course_name": "EECS1200 Computer Logic",
+    "credit": 3,
+    "program_id": 2
+  },
+  {
+    "course_name": "ENG2003 Engineering in Land",
+    "credit": 6,
+    "program_id": 1
+  },
+  {
+    "course_name": "PHY2300 Law's of Motion",
+    "credit": 6,
+    "program_id": 1
+  },
+  {
+    "course_name": "EECS1400 Bash Commands",
+    "credit": 3,
+    "program_id": 2
+  },
+  {
+    "course_name": "PHY2000 Energy and  Work",
+    "credit": 3,
+    "program_id": 1
+  },
+  {
+    "course_name": "EECS1800 Java and C+",
+    "credit": 3,
+    "program_id": 2
+  }
+]

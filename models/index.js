@@ -1,33 +1,35 @@
 const User = require('./User');
-const Comment = require('./Comment');
-const Blog = require('./Blog');
+const Courses = require('./Courses');
+const Program = require('./Program');
+const Student = require('./Student');
+const Program_Courses = require('./Program_Courses');
 
-Blog.belongsTo(User, {
-  foreignKey: 'user_id'
+Program.belongsTo(Student, {
+  foreignKey: 'student_id'
 });
 
-User.hasMany(Blog, {
-  foreignKey: 'user_id',
+Student.hasMany(Courses, {
+  foreignKey: 'courses_id',
   onDelete: 'CASCADE'
 });
 
-Blog.hasMany(Comment, {
-  foreignKey: 'blog_id',
+Program.hasMany(Courses, {
+  foreignKey: 'courses_id',
   onDelete: 'CASCADE'
 });
 
-Comment.belongsTo(Blog, {
-  foreignKey: 'blog_id'
+Courses.belongsTo(Program, {
+  foreignKey: 'program_id'
 });
 
-Comment.belongsTo(User, {
-  foreignKey: 'user_id'
+Courses.belongsTo(Student, {
+  foreignKey: 'student_id'
 });
 
-User.hasMany(Comment, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
-});
+// Program.hasMany(Student, {
+//   foreignKey: 'student_id',
+//   // onDelete: 'CASCADE'
+// });
 
 
-module.exports = { User, Comment, Blog };
+module.exports = { User, Courses, Program, Student, Program_Courses };
